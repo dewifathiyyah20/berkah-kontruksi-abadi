@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PT BERKAH KONTRUKSI ABADI</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Header + Nav */
+    header {
+      background-color: #003366;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      color: white;
+    }
+
+    header img {
+      height: 40px;
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      background: white;
+      height: 3px;
+      margin: 4px 0;
+      width: 25px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        background-color: #003366;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        padding: 10px;
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1581090700227-1a0b88d7bb89?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+      background-color: #fff;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    footer {
+      background-color: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Logo">
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav id="menu">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>CV Karya Dewi Konstruksi</h1>
+    <p>Membangun Masa Depan dengan Kualitas dan Kepercayaan</p>
+  </div>
+
+  <main>
+    <section id="about">
+      <h2>Tentang Kami</h2>
+      <p>CV Karya Dewi Konstruksi adalah perusahaan konstruksi yang bergerak dalam pembangunan gedung, perumahan, dan infrastruktur umum. Kami berkomitmen pada kualitas, efisiensi, dan ketepatan waktu dalam setiap proyek.</p>
+    </section>
+
+    <section id="services">
+      <h2>Layanan Kami</h2>
+      <ul>
+        <li>Konstruksi Gedung & Perumahan</li>
+        <li>Jalan & Drainase</li>
+        <li>Renovasi & Perbaikan</li>
+        <li>Konsultasi Teknik & Manajemen Proyek</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Kontak Kami</h2>
+      <p>Email: <a href="mailto:dewi@karyadewikonstruksi.com">berkahkontruksiabadi@gmail.com</a></p>
+      <p>WhatsApp: <a href="https://wa.me/628xxxxxxxxxx">+62 823-1579-0744</a></p>
+      <p>Alamat: Tasikmalaya, Jawa Barat, Indonesia</p>
+    </section>
+	
+	<div style="margin-top:20px;">
+    <h3>Lokasi Kami</h3>
+    <iframe 
+      src="https://maps.app.goo.gl/Pv8i5H1X9wNn584VA" 
+      width="100%" 
+      height="300" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+  </main>
+
+  <footer>
+    &copy; 2025 PT BERKAH KONTRUKSI ABADI. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
